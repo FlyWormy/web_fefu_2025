@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Студент</title>
+</head>
+<body>
+    <h1>Профиль студента</h1>
+
+    {% if error %}
+        <p style="color: red;">Ошибка: {{ error }}</p>
+    {% else %}
+        <p>ID студента: {{ student_id }}</p>
+    {% endif %}
+
+    <a href="/">На главную</a>
+</body>
+</html>
