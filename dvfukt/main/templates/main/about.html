@@ -1,10 +1,36 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>О нас</title>
-</head>
-<body>
-    <h1>О нас</h1>
-    <p>Информация о нас</p>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}О нас{% endblock %}
+
+{% block content %}
+<h1>О нас</h1>
+<p>Информация о нас</p>
+
+<div style="margin-top: 30px;">
+    <h2>Наша команда</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+        <div style="border: 1px solid #ddd; padding: 20px; border-radius: 8px;">
+            <h3>Иван Иванов</h3>
+            <p>Основатель компании</p>
+            <p>Опыт работы: 10 лет</p>
+        </div>
+        <div style="border: 1px solid #ddd; padding: 20px; border-radius: 8px;">
+            <h3>Мария Петрова</h3>
+            <p>Технический директор</p>
+            <p>Опыт работы: 8 лет</p>
+        </div>
+        <div style="border: 1px solid #ddd; padding: 20px; border-radius: 8px;">
+            <h3>Алексей Сидоров</h3>
+            <p>Разработчик</p>
+            <p>Опыт работы: 5 лет</p>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top: 40px;">
+    <h2>Наши контакты</h2>
+    <p>📧 Email: info@company.com</p>
+    <p>📞 Телефон: +7 (999) 123-45-67</p>
+    <p>📍 Адрес: г. Москва, ул. Примерная, д. 123</p>
+</div>
+{% endblock %}
